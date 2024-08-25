@@ -104,8 +104,8 @@ const Navbar = () => {
                         </div>
 
                         <div className="flex justify-center lg:justify-end gap-2 mt-6 lg:flex lg:mt-0 lg:-mx-2 lg:w-1/3">
-                            <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-violet-500 dark:text-white rounded-md px-4 py-1">
-                                <span>Login</span>
+                            <button className="border text-sm relative border-neutral-200 dark:border-white/[0.2] text-violet-500 bg-violet-100 font-semibold dark:text-white rounded-md px-4 py-1">
+                                <span>Log in</span>
                                 
                             </button>
                             <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-white px-4 py-2 rounded-md bg-violet-500">
