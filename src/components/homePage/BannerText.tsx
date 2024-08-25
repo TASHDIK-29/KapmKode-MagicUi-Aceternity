@@ -3,7 +3,7 @@ import React from 'react';
 const BannerText = () => {
     return (
         <div className='flex flex-col items-center justify-center w-5/6 mx-auto space-y-10'>
-            <div className=' space-y-2'>
+            <div className='text-center space-y-2'>
                 <h1 className='text-5xl text-black font-semibold '>We have really speed up  our  workflow</h1>
                 <p className='text-base w-3/4 mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quibusdam id dignissimos exercitationem assumenda recusandae sed provident rerum beatae fuga?</p>
             </div>

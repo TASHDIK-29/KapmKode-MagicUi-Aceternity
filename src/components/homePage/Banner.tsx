@@ -3,10 +3,10 @@ import BannerText from "./BannerText";
 
 export function OrbitingCirclesDemo() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-            <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+        <div className="relative flex h-[900px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background ">
+            <div className="">
                 <BannerText />
-            </span>
+            </div>
 
             {/*1 Inner Circles */}
             <OrbitingCircles
@@ -29,25 +29,25 @@ export function OrbitingCirclesDemo() {
             {/*2 Outer Circles (reverse) */}
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={270}
+                radius={250}
                 duration={20}
-                
+
             >
                 <Icons.gitlab />
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={270}
+                radius={250}
                 duration={20}
                 delay={20}
-                
+
             >
                 <Icons.css />
             </OrbitingCircles>
             {/*3 Outer Circles (reverse) */}
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={360}
+                radius={340}
                 duration={20}
                 reverse
             >
@@ -55,7 +55,7 @@ export function OrbitingCirclesDemo() {
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={360}
+                radius={340}
                 duration={20}
                 delay={20}
                 reverse
@@ -65,25 +65,25 @@ export function OrbitingCirclesDemo() {
             {/*4 Outer Circles (reverse) */}
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={420}
+                radius={400}
                 duration={20}
-                
+
             >
                 <Icons.node />
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={420}
+                radius={400}
                 duration={20}
                 delay={20}
-        
+
             >
                 <Icons.gitHub />
             </OrbitingCircles>
             {/*5 Outer Circles (reverse) */}
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={540}
+                radius={520}
                 duration={20}
                 reverse
             >
@@ -91,7 +91,7 @@ export function OrbitingCirclesDemo() {
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={540}
+                radius={520}
                 duration={20}
                 delay={20}
                 reverse
@@ -100,12 +100,12 @@ export function OrbitingCirclesDemo() {
             </OrbitingCircles>
             <OrbitingCircles
                 className="size-[50px] border-none bg-transparent"
-                radius={640}
+                radius={600}
                 duration={20}
                 delay={20}
                 reverse
             >
-                
+
             </OrbitingCircles>
         </div>
     );
@@ -133,12 +133,12 @@ const Icons = {
         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#4496e3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
     ),
     gitlab: () => (
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="100"  height="100"  viewBox="0 0 24 24"  fill="none"  stroke="#fc9a7c"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-gitlab"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-9 7l-9 -7l3 -11l3 7h6l3 -7z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#fc9a7c" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-gitlab"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M21 14l-9 7l-9 -7l3 -11l3 7h6l3 -7z" /></svg>
     ),
     html: () => (
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="100"  height="100"  viewBox="0 0 24 24"  fill="none"  stroke="#fc9a7c"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#fc9a7c" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
     ),
     next: () => (
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="100"  height="100"  viewBox="0 0 24 24"  fill="none"  stroke="#121212"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-nextjs"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993" /><path d="M15 12v-3" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-nextjs"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993" /><path d="M15 12v-3" /></svg>
     ),
 };
